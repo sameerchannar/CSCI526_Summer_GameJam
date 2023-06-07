@@ -10,11 +10,16 @@ public class movement : MonoBehaviour
     public float strength_factor = 0.1f;
     private float collectedCount = 0;
     public float needToCollect;
+    private LineRenderer lineRenderer;
+
 
     // Start is called before the first frame update
     void Start()
     {
         ball = GetComponent<Rigidbody2D>();
+        if (lineRenderer == null) {
+            lineRenderer = gameObject.AddComponent<LineRenderer>();
+        }
     }
 
     Vector2 startPoint = new Vector2();
@@ -30,10 +35,21 @@ public class movement : MonoBehaviour
             //Debug.Log(startPoint[0]);
             //Debug.Log(startPoint[1]);
             started_stroke = 1;
+            lineRenderer.SetPosition(0, startPoint);
+            lineRenderer.SetPosition(1, startPoint);
+            lineRenderer.enabled = true;
+
+        }
+
+        if (Input.GetMouseButton(0)) {
+            endPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            lineRenderer.SetPosition(1, endPoint);
         }
 
         //ending stroke
         if (Input.GetMouseButtonUp(0)) {
+            lineRenderer.enabled = false;
+
             endPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             //Debug.Log(endPoint[0]);
             //Debug.Log(endPoint[1]);

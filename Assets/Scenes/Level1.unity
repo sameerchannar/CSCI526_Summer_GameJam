@@ -398,7 +398,6 @@ GameObject:
   m_Component:
   - component: {fileID: 374439679}
   - component: {fileID: 374439680}
-  - component: {fileID: 374439681}
   - component: {fileID: 374439682}
   m_Layer: 0
   m_Name: Capsule
@@ -474,22 +473,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &374439681
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374439678}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: bc22cc99d37e741188abe67bbb0750b7, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.99999994, y: 1.9999999}
-  m_Direction: 0
 --- !u!114 &374439682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,7 +1099,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052476134}
-  - component: {fileID: 1052476133}
   - component: {fileID: 1052476135}
   m_Layer: 0
   m_Name: Capsules
@@ -1125,22 +1107,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!70 &1052476133
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052476132}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
-  m_Direction: 0
 --- !u!4 &1052476134
 Transform:
   m_ObjectHideFlags: 0
@@ -1458,7 +1424,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1317774460}
   - component: {fileID: 1317774461}
-  - component: {fileID: 1317774462}
   - component: {fileID: 1317774463}
   m_Layer: 0
   m_Name: Capsule4
@@ -1534,22 +1499,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &1317774462
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317774459}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: bc22cc99d37e741188abe67bbb0750b7, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
 --- !u!114 &1317774463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1782,7 +1731,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1738844391}
   - component: {fileID: 1738844393}
-  - component: {fileID: 1738844392}
   - component: {fileID: 1738844394}
   m_Layer: 0
   m_Name: Capsule3
@@ -1806,22 +1754,6 @@ Transform:
   m_Father: {fileID: 1052476134}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 23.78}
---- !u!70 &1738844392
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738844390}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: bc22cc99d37e741188abe67bbb0750b7, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
 --- !u!212 &1738844393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1898,7 +1830,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1913683633}
   - component: {fileID: 1913683634}
-  - component: {fileID: 1913683635}
   - component: {fileID: 1913683636}
   m_Layer: 0
   m_Name: Capsule1
@@ -1974,22 +1905,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &1913683635
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913683632}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: bc22cc99d37e741188abe67bbb0750b7, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.9999999, y: 1.9999998}
-  m_Direction: 0
 --- !u!114 &1913683636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2014,7 +1929,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1956606579}
   - component: {fileID: 1956606580}
-  - component: {fileID: 1956606581}
   - component: {fileID: 1956606582}
   m_Layer: 0
   m_Name: Capsule2
@@ -2090,22 +2004,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &1956606581
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1956606578}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: bc22cc99d37e741188abe67bbb0750b7, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.99999994, y: 1.9999998}
-  m_Direction: 0
 --- !u!114 &1956606582
 MonoBehaviour:
   m_ObjectHideFlags: 0
