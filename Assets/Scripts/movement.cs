@@ -8,6 +8,8 @@ public class movement : MonoBehaviour
     public float strength_limit = 1000;
     public Rigidbody2D ball;
     public float strength_factor = 0.1f;
+    private float collectedCount = 0;
+    public float needToCollect;
 
     // Start is called before the first frame update
     void Start()
@@ -50,5 +52,22 @@ public class movement : MonoBehaviour
         }
 
 
+
+
     }
+
+    // void OnCollisionEnter2D(Collision2D other)
+    // {
+    //     // Debug.Log("Collided with: " + other.gameObject.tag);
+    //     if (other.gameObject != null){   
+    //         if (other.gameObject.tag == "capsule"){
+    //             Debug.Log("Heyy! Collided with: " + other.gameObject.tag);
+    //             Destroy(other.gameObject);
+    //             this.collectedCount += 1;
+    //         }
+
+            
+            
+    //     }
+    // }
 }
