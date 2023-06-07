@@ -20,7 +20,8 @@ public class scored : MonoBehaviour
         Vector2 direction = hole.transform.position - ball.transform.position;
         float dist = direction.magnitude;
         if (dist < threshold) {
-            Debug.Log("You Scored!");
+            if (global.collectedCount == global.needToCollect)
+                Debug.Log("You Win!!!!!");
         }
     }
 }

@@ -20,7 +20,7 @@ public class capsule : MonoBehaviour
         float dist = direction.magnitude;
         if (dist < threshold) {
             Debug.Log("Collected a capsule!");
-            // ball.collectedCount += 1;
+            global.collectedCount += 1;
             Destroy(gameObject);
         }
     }
