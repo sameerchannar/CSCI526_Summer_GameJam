@@ -35,15 +35,17 @@ public class movement : MonoBehaviour
             //Debug.Log(startPoint[0]);
             //Debug.Log(startPoint[1]);
             started_stroke = 1;
-            lineRenderer.SetPosition(0, startPoint);
-            lineRenderer.SetPosition(1, startPoint);
+            Vector3 line_start = Camera.main.ScreenToWorldPoint(startPoint) + Vector3.forward;
+            lineRenderer.SetPosition(0, line_start);
+            lineRenderer.SetPosition(1, line_start);
             lineRenderer.enabled = true;
 
         }
 
         if (Input.GetMouseButton(0)) {
             endPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            lineRenderer.SetPosition(1, endPoint);
+            Vector3 line_end = Camera.main.ScreenToWorldPoint(endPoint) + Vector3.forward;
+            lineRenderer.SetPosition(1, line_end);
         }
 
         //ending stroke
