@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - capsule
+  - enemy
   layers:
   - Default
   - TransparentFX

@@ -8,8 +8,6 @@ public class movement : MonoBehaviour
     public float strength_limit = 1000;
     public Rigidbody2D ball;
     public float strength_factor = 0.1f;
-    private float collectedCount = 0;
-    public float needToCollect;
     private LineRenderer lineRenderer;
 
 
@@ -17,7 +15,8 @@ public class movement : MonoBehaviour
     void Start()
     {
         ball = GetComponent<Rigidbody2D>();
-        if (lineRenderer == null) {
+        if (lineRenderer == null)
+        {
             lineRenderer = gameObject.AddComponent<LineRenderer>();
         }
     }
@@ -30,7 +29,8 @@ public class movement : MonoBehaviour
     void Update()
     {
         // starting stroke
-        if (Input.GetMouseButtonDown(0) && started_stroke == 0) {
+        if (Input.GetMouseButtonDown(0) && started_stroke == 0)
+        {
             startPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             //Debug.Log(startPoint[0]);
             //Debug.Log(startPoint[1]);
@@ -42,14 +42,16 @@ public class movement : MonoBehaviour
 
         }
 
-        if (Input.GetMouseButton(0)) {
+        if (Input.GetMouseButton(0))
+        {
             endPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             Vector3 line_end = Camera.main.ScreenToWorldPoint(endPoint) + Vector3.forward;
             lineRenderer.SetPosition(1, line_end);
         }
 
         //ending stroke
-        if (Input.GetMouseButtonUp(0)) {
+        if (Input.GetMouseButtonUp(0))
+        {
             lineRenderer.enabled = false;
 
             endPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -74,18 +76,31 @@ public class movement : MonoBehaviour
 
     }
 
-    // void OnCollisionEnter2D(Collision2D other)
-    // {
-    //     // Debug.Log("Collided with: " + other.gameObject.tag);
-    //     if (other.gameObject != null){   
-    //         if (other.gameObject.tag == "capsule"){
-    //             Debug.Log("Heyy! Collided with: " + other.gameObject.tag);
-    //             Destroy(other.gameObject);
-    //             this.collectedCount += 1;
-    //         }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        // Debug.Log("Collided with: " + other.gameObject.tag);
+        if (other.gameObject != null)
+        {
+            if (other.gameObject.tag == "enemy" && !global.win)
+            {
+                Debug.Log("Heyy! Collided with: " + other.gameObject.tag);
+                if (global.lives <= 1)
+                {
 
-            
-            
-    //     }
-    // }
+                    global.lose = true;
+                    Debug.Log("You LOSE!! Collided with enemy and no lives left! ");
+
+
+                }
+                else
+                {
+                    global.lives -= 1;
+                    Debug.Log("Collided with enemy! Lives left = " + global.lives);
+                }
+            }
+
+
+
+        }
+    }
 }

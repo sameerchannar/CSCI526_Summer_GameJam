@@ -11,7 +11,7 @@ public class scored : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,9 +19,15 @@ public class scored : MonoBehaviour
     {
         Vector2 direction = hole.transform.position - ball.transform.position;
         float dist = direction.magnitude;
-        if (dist < threshold) {
-            if (global.collectedCount == global.needToCollect)
+        if (dist < threshold)
+        {
+            if (global.collectedCount == global.needToCollect && global.lives > 0)
+            {
                 Debug.Log("You Win!!!!!");
+                global.win = true;
+            }
+
+
         }
     }
 }
