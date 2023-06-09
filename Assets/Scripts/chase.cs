@@ -21,8 +21,12 @@ public class chase : MonoBehaviour
         Vector2 curr_pos = enemy.transform.position;
         Vector2 direction = ball_pos - curr_pos;
         //Debug.Log("chase Direction: " + direction);
-
-        enemy.AddForce(direction * strength_factor, ForceMode2D.Impulse);
+        float ballVelocity = ball.GetComponent<Rigidbody2D>().velocity.magnitude;
+        Debug.Log("ball velocity:");
+        Debug.Log(ballVelocity);
+        if (ballVelocity > 1) {
+            enemy.AddForce(direction * strength_factor, ForceMode2D.Impulse);
+        }
         
     }
 }

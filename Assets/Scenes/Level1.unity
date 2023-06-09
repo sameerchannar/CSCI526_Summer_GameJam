@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1354467752}
+    - target: {fileID: 3024302322181240710, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
+      propertyPath: m_LinearDrag
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
 --- !u!4 &5793341 stripped
@@ -256,6 +260,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1354467752}
+    - target: {fileID: 3024302322181240710, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
+      propertyPath: m_LinearDrag
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
 --- !u!4 &201109207 stripped
@@ -1458,6 +1466,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1354467752}
+    - target: {fileID: 3024302322181240710, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
+      propertyPath: m_LinearDrag
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
 --- !u!4 &997666537 stripped
@@ -2688,5 +2700,9 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1354467752}
+    - target: {fileID: 3024302322181240710, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
+      propertyPath: m_LinearDrag
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
