@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/Sameer/Desktop/build6;C:/Users/Sameer/Desktop/build 5;C:/Users/Sameer/Desktop/game jam build;D:/ASU/Semester 7 classes/CSE 485/Project_Instances/GameJam/WebGL Builds;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/Sameer/Desktop/build7;C:/Users/Sameer/Desktop/build6;C:/Users/Sameer/Desktop/build 5;C:/Users/Sameer/Desktop/game jam build;D:/ASU/Semester 7 classes/CSE 485/Project_Instances/GameJam/WebGL Builds;;;;;\"}"
             }
         ]
     }
