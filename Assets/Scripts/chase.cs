@@ -8,7 +8,7 @@ public class chase : MonoBehaviour
     public GameObject ball;
     public float strength_factor = 0.001f;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame Update
     void Start()
     {
         enemy = GetComponent<Rigidbody2D>();

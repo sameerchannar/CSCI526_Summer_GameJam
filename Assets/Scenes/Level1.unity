@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1354467752}
+    - target: {fileID: 3024302322181240708, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
+      propertyPath: strength_factor
+      value: 0.031
+      objectReference: {fileID: 0}
     - target: {fileID: 3024302322181240710, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
       propertyPath: m_LinearDrag
       value: 5
@@ -395,6 +399,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1354467752}
+    - target: {fileID: 3024302322181240708, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
+      propertyPath: strength_factor
+      value: 0.031
+      objectReference: {fileID: 0}
     - target: {fileID: 3024302322181240710, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
       propertyPath: m_LinearDrag
       value: 5
@@ -1901,6 +1909,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1354467752}
+    - target: {fileID: 3024302322181240708, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
+      propertyPath: strength_factor
+      value: 0.031
+      objectReference: {fileID: 0}
     - target: {fileID: 3024302322181240710, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
       propertyPath: m_LinearDrag
       value: 5
@@ -3238,6 +3250,10 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1354467752}
+    - target: {fileID: 3024302322181240708, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
+      propertyPath: strength_factor
+      value: 0.031
+      objectReference: {fileID: 0}
     - target: {fileID: 3024302322181240710, guid: 658b6596491e2aa4dae7a2f9b6cba6c3, type: 3}
       propertyPath: m_LinearDrag
       value: 5
