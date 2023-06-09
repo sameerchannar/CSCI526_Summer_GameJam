@@ -17,6 +17,7 @@ public class LivesDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("hello");
         textComponent.text = "Lives: " + global.lives.ToString();
     }
 }
