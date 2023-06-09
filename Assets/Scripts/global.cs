@@ -12,4 +12,6 @@ public class global
     public static bool win = false;
     public static bool lose = false;
 
+    public static float timeRemaining;
+
 }

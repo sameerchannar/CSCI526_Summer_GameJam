@@ -21,7 +21,7 @@ public class scored : MonoBehaviour
         float dist = direction.magnitude;
         if (dist < threshold)
         {
-            if (global.collectedCount == global.needToCollect && global.lives > 0)
+            if (global.collectedCount == global.needToCollect && global.lives > 0 && global.timeRemaining >= 0)
             {
                 Debug.Log("You Win!!!!!");
                 global.win = true;

@@ -71,6 +71,11 @@ public class movement : MonoBehaviour
             ball.AddForce(direction.normalized * strength, ForceMode2D.Impulse);
         }
 
+        if (global.timeRemaining <= 0)
+        {
+            global.lose = true;
+        }
+
 
 
 
